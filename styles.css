@@ -162,6 +162,39 @@ footer{
     color: #eee;
 }
 
+.dropdown_btn {
+    background-color: transparent;
+    color: #00adb5;
+    padding: 1.6rem;
+    font-size: 1.6rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown_content {
+    display: none;
+    position: absolute;
+    min-width: 16rem;
+    overflow: auto;
+    z-index: 1;
+  }
+  
+  .dropdown_content a {
+    color: #00adb5;
+    padding: 1.2rem 1.6rem;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
 @media only screen and (max-width: 1400px ) and (min-width: 1000px){
     html{
         font-size: 40%;
@@ -192,4 +225,18 @@ footer{
       margin: 1.2rem auto;
       display: block;
     }
+    nav ul{
+        display: none;
+    }
+    header{
+        font-size: 40%;
+    }
+
 }
+
+@media only screen and (min-width: 650px){
+    .dropdown{
+        display: none;
+    }
+}
+
